@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarCenter.Data;
 using CarCenter.Models;
+using CarCenter.Models.ViewModels;
+using NuGet.Protocol.Plugins;
 
 namespace CarCenter.Controllers
 {
@@ -50,10 +52,18 @@ namespace CarCenter.Controllers
         // GET: Bills/Create
         public IActionResult Create()
         {
-            ViewData["BuyerId"] = new SelectList(_context.Client, "Id", "Id");
-            ViewData["CarId"] = new SelectList(_context.Car, "Id", "Id");
-            ViewData["SellerId"] = new SelectList(_context.Seller, "Id", "Id");
-            return View();
+            //ViewData["Buyer"] = new SelectList(_context.Client, "Name", "Name");
+            //ViewData["Car"] = new SelectList(_context.Car, "Model", "Model");
+            //ViewData["Seller"] = new SelectList(_context.Seller, "Name", "Name");
+            //return View();
+
+            var viewModel = new BillFormViewModel();
+
+            viewModel.Clients = _context.Client.ToList();
+            viewModel.Sellers = _context.Seller.ToList();
+            viewModel.Cars = _context.Car.ToList();
+
+            return View(viewModel);
         }
 
         // POST: Bills/Create
@@ -61,75 +71,64 @@ namespace CarCenter.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Number,EmissionDate,Warranty,SalePrice,BuyerId,SellerId,CarId")] Bill bill)
+        public IActionResult Create(Bill bill)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(bill);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["BuyerId"] = new SelectList(_context.Client, "Id", "Id", bill.BuyerId);
-            ViewData["CarId"] = new SelectList(_context.Car, "Id", "Id", bill.CarId);
-            ViewData["SellerId"] = new SelectList(_context.Seller, "Id", "Id", bill.SellerId);
-            return View(bill);
-        }
-
-        // GET: Bills/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.Bill == null)
-            {
-                return NotFound();
-            }
-
-            var bill = await _context.Bill.FindAsync(id);
             if (bill == null)
             {
                 return NotFound();
             }
-            ViewData["BuyerId"] = new SelectList(_context.Client, "Id", "Id", bill.BuyerId);
-            ViewData["CarId"] = new SelectList(_context.Car, "Id", "Id", bill.CarId);
-            ViewData["SellerId"] = new SelectList(_context.Seller, "Id", "Id", bill.SellerId);
-            return View(bill);
+
+            _context.Add(bill);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
+
+        // GET: Bills/Edit/5
+
+        public IActionResult Edit(int id)
+        {
+            var bill = _context.Bill.FirstOrDefault(s => s.Id == id);
+
+            // Verificar se foi encontrado um objeto vendedor com o id passado na url
+            if (bill == null)
+            {
+                return NotFound();
+            }
+
+            // Cria uma lista de departamentos
+            List<Client> clients = _context.Client.ToList();
+            List<Seller> sellers = _context.Seller.ToList();
+            List<Car> cars = _context.Car.ToList();
+
+            // Cria uma instância do View Model
+            BillFormViewModel viewModel = new BillFormViewModel();
+
+            viewModel.Clients = clients;
+            viewModel.Sellers = sellers;
+            viewModel.Cars = cars;
+            viewModel.Bill = bill;
+
+            return View(viewModel);
+        }
+        
 
         // POST: Bills/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Number,EmissionDate,Warranty,SalePrice,BuyerId,SellerId,CarId")] Bill bill)
+        public IActionResult Edit(Bill bill)
         {
-            if (id != bill.Id)
+            // Verifica se foi passado um objeto 
+            if (bill == null)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(bill);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!BillExists(bill.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["BuyerId"] = new SelectList(_context.Client, "Id", "Id", bill.BuyerId);
-            ViewData["CarId"] = new SelectList(_context.Car, "Id", "Id", bill.CarId);
-            ViewData["SellerId"] = new SelectList(_context.Seller, "Id", "Id", bill.SellerId);
-            return View(bill);
+            _context.Update(bill);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // GET: Bills/Delete/5

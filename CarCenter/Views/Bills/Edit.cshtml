@@ -1,62 +1,62 @@
-﻿@model CarCenter.Models.Bill
+﻿@model CarCenter.Models.ViewModels.BillFormViewModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
-<h4>Bill</h4>
+<h4>Nota</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="Bill.Id" />
             <div class="form-group">
-                <label asp-for="Number" class="control-label"></label>
-                <input asp-for="Number" class="form-control" />
-                <span asp-validation-for="Number" class="text-danger"></span>
+                <label asp-for="Bill.Number" class="control-label"></label>
+                <input asp-for="Bill.Number" class="form-control" />
+                <span asp-validation-for="Bill.Number" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EmissionDate" class="control-label"></label>
-                <input asp-for="EmissionDate" class="form-control" />
-                <span asp-validation-for="EmissionDate" class="text-danger"></span>
+                <label asp-for="Bill.EmissionDate" class="control-label"></label>
+                <input asp-for="Bill.EmissionDate" class="form-control" />
+                <span asp-validation-for="Bill.EmissionDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Warranty" class="control-label"></label>
-                <input asp-for="Warranty" class="form-control" />
-                <span asp-validation-for="Warranty" class="text-danger"></span>
+                <label asp-for="Bill.Warranty" class="control-label"></label>
+                <input asp-for="Bill.Warranty" class="form-control" />
+                <span asp-validation-for="Bill.Warranty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SalePrice" class="control-label"></label>
-                <input asp-for="SalePrice" class="form-control" />
-                <span asp-validation-for="SalePrice" class="text-danger"></span>
+                <label asp-for="Bill.SalePrice" class="control-label"></label>
+                <input asp-for="Bill.SalePrice" class="form-control" />
+                <span asp-validation-for="Bill.SalePrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BuyerId" class="control-label"></label>
-                <select asp-for="BuyerId" class="form-control" asp-items="ViewBag.BuyerId"></select>
-                <span asp-validation-for="BuyerId" class="text-danger"></span>
+                <label asp-for="Bill.Buyer" class="control-label"></label>
+                <select asp-for="Bill.BuyerId" class="form-control" asp-items="@(new SelectList(Model.Clients, "Id", "Name"))"></select>
+                <span asp-validation-for="Bill.BuyerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SellerId" class="control-label"></label>
-                <select asp-for="SellerId" class="form-control" asp-items="ViewBag.SellerId"></select>
-                <span asp-validation-for="SellerId" class="text-danger"></span>
+                <label asp-for="Bill.Seller" class="control-label"></label>
+                <select asp-for="Bill.SellerId" class="form-control" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))"></select>
+                <span asp-validation-for="Bill.SellerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CarId" class="control-label"></label>
-                <select asp-for="CarId" class="form-control" asp-items="ViewBag.CarId"></select>
-                <span asp-validation-for="CarId" class="text-danger"></span>
+                <label asp-for="Bill.Car" class="control-label"></label>
+                <select asp-for="Bill.CarId" class="form-control" asp-items="@(new SelectList(Model.Cars, "Id", "Model"))"></select>
+                <span asp-validation-for="Bill.CarId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para a lista</a>
 </div>
 
 @section Scripts {

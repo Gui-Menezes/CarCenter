@@ -12,7 +12,7 @@ namespace CarCenter.Models
         public string Name { get; set; }
         [Display(Name = "Data Nascimento")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd:MM:yyyy}")]
+        // [DisplayFormat(DataFormatString = "{0:dd:MM:yyyy}")]
         public DateTime BirthDate { get; set; }
         [Display(Name = "E-mail")]
         public string Email { get; set; }

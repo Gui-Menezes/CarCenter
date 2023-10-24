@@ -9,6 +9,8 @@ namespace CarCenter.Models
         [Display(Name = "Número")]
         public int Number { get; set; }
         [Display(Name = "Data Emissão")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd:MM:yyyy}")]
         public DateTime EmissionDate { get; set; }
         [Display(Name = "Garantia (dias)")]
         public int Warranty { get; set; }
