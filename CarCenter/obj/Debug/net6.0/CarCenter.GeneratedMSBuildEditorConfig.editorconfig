@@ -9,117 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarCenter
 build_property.RootNamespace = CarCenter
-build_property.ProjectDir = C:\Users\fanti\source\repos\CarCenter\CarCenter\
+build_property.ProjectDir = C:\Users\Guilherme\source\repos\CarCenter\CarCenter\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fanti\source\repos\CarCenter\CarCenter
+build_property.MSBuildProjectDirectory = C:\Users\Guilherme\source\repos\CarCenter\CarCenter
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Bills/Create.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Bills/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Bills/Delete.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Bills/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Bills/Details.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Bills/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Bills/Edit.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Bills/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Bills/Index.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Bills/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Cars/Create.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Cars/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Cars/Delete.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Cars/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Cars/Details.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Cars/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Cars/Edit.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Cars/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Cars/Index.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Cars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Clients/Create.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Clients/Delete.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Clients/Details.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Clients/Edit.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Clients/Index.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Home/Index.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Home/Privacy.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Sellers/Create.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Sellers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Sellers/Delete.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Sellers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Sellers/Details.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Sellers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Sellers/Edit.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Sellers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Sellers/Index.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Sellers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Shared/Error.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/_ViewImports.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/_ViewStart.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fanti/source/repos/CarCenter/CarCenter/Views/Shared/_Layout.cshtml]
+[C:/Users/Guilherme/source/repos/CarCenter/CarCenter/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n0u218fpr9

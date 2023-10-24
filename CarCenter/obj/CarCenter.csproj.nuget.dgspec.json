@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fanti\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj": {}
+    "C:\\Users\\Guilherme\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fanti\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj": {
+    "C:\\Users\\Guilherme\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fanti\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj",
         "projectName": "CarCenter",
-        "projectPath": "C:\\Users\\fanti\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj",
-        "packagesPath": "C:\\Users\\fanti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fanti\\source\\repos\\CarCenter\\CarCenter\\obj\\",
+        "projectPath": "C:\\Users\\Guilherme\\source\\repos\\CarCenter\\CarCenter\\CarCenter.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Guilherme\\source\\repos\\CarCenter\\CarCenter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fanti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
